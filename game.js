@@ -1,3 +1,6 @@
+const heartImage = new Image();
+heartImage.src = "heart.png"; // put heart.png in same folder as index.html
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -26,6 +29,20 @@ if (keys["ArrowRight"]) player.x += player.speed;
 function draw() {
 ctx.fillStyle = "black";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  function draw() {
+ctx.fillStyle = "black";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// Draw the heart image instead of a square
+ctx.drawImage(
+heartImage,
+player.x,
+player.y,
+player.size,
+player.size
+);
+}
 
 // Player
 ctx.fillStyle = player.color;
