@@ -1,5 +1,5 @@
 const heartImage = new Image();
-heartImage.src = "heart.png"; // put heart.png in same folder as index.html
+heartImage.src = "Undertale_red_soul.svg.png"; // put heart.png in same folder as index.html
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
